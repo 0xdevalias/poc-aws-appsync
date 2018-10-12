@@ -232,13 +232,15 @@ Now that you have a basic hacked together test bed, you might want to wire thing
 
 * https://aws-amplify.github.io/amplify-js/media/api_guide#react-components
 
-## TODO: Amplify (the easy way, CLI)
+## Amplify (the easy way, CLI)
 
 Looking at our AWS AppSync Console, the root page for our project actually gives us some easy commands to inject support into our application (if we're using the [Amplify CLI](https://github.com/aws-amplify/amplify-cli))
 
-TODO
+TODO: Explore this more
 
 ```
+amplify init
+
 amplify add codegen --apiId ABC123YOURAPPSYNCAPIID
 ```
 
