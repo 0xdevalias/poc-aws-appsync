@@ -1,0 +1,19 @@
+﻿type Command {
+  channelID: String!
+  command: String!
+  sentAt: AWSDateTime
+}
+
+type Mutation {
+  sendCommand(channelID: ID!, command: String!): Command
+}
+
+type Query {
+  #  TODO: Do we need to have a query type?
+  noop: String
+}
+
+type Subscription {
+  receivedCommand(channelID: ID!): Command
+    @aws_subscribe(mutations:["sendCommand"])
+}
