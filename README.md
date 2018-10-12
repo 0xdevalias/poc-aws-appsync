@@ -1,10 +1,15 @@
 # PoC-AWS-AppSync
 
-PoC playing with [AWS AppSync](https://aws.amazon.com/appsync/) and [GraphQL subscriptions](https://docs.aws.amazon.com/appsync/latest/devguide/real-time-data.html) (websockets, mqtt, etc) in [React](https://github.com/facebook/create-react-app)
+PoC playing with [AWS AppSync](https://aws.amazon.com/appsync/) and [GraphQL subscriptions](https://docs.aws.amazon.com/appsync/latest/devguide/real-time-data.html) (websockets, mqtt, etc) in [React](https://github.com/facebook/create-react-app).
 
 ## GraphQL Schema, ..TODO:etc..
 
 TODO: how to set up in AWS
+
+* https://docs.aws.amazon.com/appsync/latest/devguide/designing-a-graphql-api.html
+* https://docs.aws.amazon.com/appsync/latest/devguide/real-time-data.html
+* https://docs.aws.amazon.com/appsync/latest/devguide/tutorial-local-resolvers.html
+* https://docs.aws.amazon.com/appsync/latest/devguide/resolver-context-reference.html
 
 ## React
 
