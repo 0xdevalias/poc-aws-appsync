@@ -4,7 +4,13 @@ PoC playing with [AWS AppSync](https://aws.amazon.com/appsync/) and [GraphQL sub
 
 ## GraphQL Schema, ..TODO:etc..
 
-TODO: how to set up in AWS
+TODO: how to set up in AWS Console
+
+* [Schema](./graphql/schema.graphql)
+* Resolvers
+  * Mutation.sendCommand: [Request](./graphql/resolvers/resolver-Mutation-sendCommand.request.txt), [Response](./graphql/resolvers/resolver-Mutation-sendCommand.response.txt)
+
+References:
 
 * https://docs.aws.amazon.com/appsync/latest/devguide/designing-a-graphql-api.html
 * https://docs.aws.amazon.com/appsync/latest/devguide/real-time-data.html
