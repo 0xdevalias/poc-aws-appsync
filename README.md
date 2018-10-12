@@ -66,7 +66,9 @@ Amplify.register(API);
 console.log("Automagicly Wired?", Amplify.API !== null); // true
 ```
 
-For the next part you will need to grab a few settings from the aptly named 'Settings' page in your project within the AWS AppSync Console. Alternatively, you could grab them with the [AWS AppSync CLI](https://docs.aws.amazon.com/cli/latest/reference/appsync/index.html):
+For the next part you will need to grab a few settings from the aptly named 'Settings' page in your project within the AWS AppSync Console. You could use the 'Download Config' button, or copy the relevant bits manually.
+
+Alternatively, you could grab them with the [AWS AppSync CLI](https://docs.aws.amazon.com/cli/latest/reference/appsync/index.html):
 
 * [`list-api-keys`](https://docs.aws.amazon.com/cli/latest/reference/appsync/list-api-keys.html): Will show you all of your API's (and the most of the details you'll need for config)
 * [`get-graphql-api`](https://docs.aws.amazon.com/cli/latest/reference/appsync/get-graphql-api.html): If you already know your apiID, you can get the details directly
