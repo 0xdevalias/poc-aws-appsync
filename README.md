@@ -235,3 +235,34 @@ TODO
 ```
 amplify add codegen --apiId ABC123YOURAPPSYNCAPIID
 ```
+
+## Infrastructure as Code (CloudFormation, CDK, etc)
+
+Playing with web UI's is nice for learning, but at the end of the day we want everything tracked and comitted in git, defined and re-deployable.
+
+**CloudFormation**
+
+* [`AWS::AppSync::GraphQLApi`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html)
+* [`AWS::AppSync::ApiKey`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html)
+* [`AWS::AppSync::GraphQLSchema`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html)
+* [`AWS::AppSync::DataSource`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html)
+* [`AWS::AppSync::Resolver`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html)
+
+**AWS Cloud Development Kit (CDK)**
+
+* https://awslabs.github.io/aws-cdk/refs/_aws-cdk_aws-appsync.html
+  * [ApiKeyResource](https://awslabs.github.io/aws-cdk/refs/_aws-cdk_aws-appsync.html#apikeyresource)
+  * [ApiKeyResourceProps](https://awslabs.github.io/aws-cdk/refs/_aws-cdk_aws-appsync.html#apikeyresourceprops-interface)
+  * [DataSourceResource](https://awslabs.github.io/aws-cdk/refs/_aws-cdk_aws-appsync.html#datasourceresource)
+  * [DataSourceResourceProps](https://awslabs.github.io/aws-cdk/refs/_aws-cdk_aws-appsync.html#datasourceresourceprops-interface)
+  * [GraphQLApiResource](https://awslabs.github.io/aws-cdk/refs/_aws-cdk_aws-appsync.html#graphqlapiresource)
+  * [GraphQLApiResourceProps](https://awslabs.github.io/aws-cdk/refs/_aws-cdk_aws-appsync.html#graphqlapiresourceprops-interface)
+  * [GraphQLSchemaResource](https://awslabs.github.io/aws-cdk/refs/_aws-cdk_aws-appsync.html#graphqlschemaresource)
+  * [GraphQLSchemaResourceProps](https://awslabs.github.io/aws-cdk/refs/_aws-cdk_aws-appsync.html#graphqlschemaresourceprops-interface)
+  * [ResolverResource](https://awslabs.github.io/aws-cdk/refs/_aws-cdk_aws-appsync.html#resolverresource)
+  * [ResolverResourceProps](https://awslabs.github.io/aws-cdk/refs/_aws-cdk_aws-appsync.html#resolverresourceprops-interface)
+
+**AWS Serverless Application Model (SAM)**
+
+* Not currently supported
+  * https://github.com/awslabs/serverless-application-model/issues/354
