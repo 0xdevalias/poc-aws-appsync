@@ -42,11 +42,13 @@ const SubscribeToChannelCommands = `subscription SubscribeToChannelCommands($cha
 }`;
 
 // Subscribe to channel
+// Ref: http://reactivex.io/rxjs/class/es6/Subscriber.js~Subscriber.html
 const subscription = Amplify.API.graphql(
   graphqlOperation(SubscribeToChannelCommands, { channelID: 'abc123' })
 ).subscribe({
   next: (eventData) => console.log("Subscription:", eventData, eventData.value.data),
-  error: (eventData) => console.log("Subscription error:", eventData)
+  error: (err) => console.log("Subscription error:", err),
+  complete: () => console.log("Subscription complete")
 });
 
 // Send mutation after a short delay
